@@ -26,7 +26,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
         images: [
           `${req.protocol}://${req.get('host')}/img/tours/${tour.imageCover}`
         ],
-        amount: tour.price * 10,
+        amount: tour.price * 100,
         currency: 'idr',
         quantity: 1
       }
